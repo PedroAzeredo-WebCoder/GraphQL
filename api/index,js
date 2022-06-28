@@ -1,0 +1,13 @@
+const {
+    ApolloServer
+} = require("apollo-server");
+
+const users = [{
+    nome: 'Pedro',
+    ativo: true
+}]
+
+const server = new ApolloServer({
+    typeDefs,
+    resolvers
+});
